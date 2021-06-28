@@ -8,6 +8,7 @@ import AddFavourite from './components/AddFavorites';
 import RemoveFavourites from './components/RemoveFavourites';
 import Navbar from './components/Navbar';
 
+
 function App() {
   const [movies, setMovies] = useState([])
   const [searchValue, setSearchValue] = useState('')
@@ -15,13 +16,14 @@ function App() {
   
   const getMovieRequest = async () => {
     const url = `https://kinopoiskapiunofficial.tech/api/v2.1/films/search-by-keyword?keyword=${searchValue}&page=1`;
+    const APi_KEY = process.env.REACT_APP_API_KEY;
 
     const response = await fetch(url,
       {
         method: 'GET',
         headers: {
           accept: 'application/json',
-          'X-API-KEY': '2938e0dc-52db-44ca-ad79-22ca3383bc3a'
+          'X-API-KEY': APi_KEY
         }
       }
     );
