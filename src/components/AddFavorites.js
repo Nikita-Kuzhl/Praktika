@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AddFavourite = (props) => {
+const AddFavourite = () => {
 	return (
 		<>
 			<span className='mr-2'> <p>Добавить в избранное</p></span>

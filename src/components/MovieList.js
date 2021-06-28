@@ -11,7 +11,6 @@ const MovieList = (props) => {
             onClick={() => props.handleFavorteiClick(movie)}
             className="overlay d-flex align-items-center justify-content-center"
           >
-            {/* <span>{movie.genres.map((mov)=>(<a>{mov.genre.split(',')}</a>))}</span> */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
